@@ -1,4 +1,4 @@
-# BinaryEdge IPv4 Addresses Scraper # 
+# BinaryEdge IPv4 Address Scraper # 
 This simple script will pull all of BinaryEdge.io's IPv4  addresses for their scanners. All IPs will be written to a plain-text file, with each IP separated on a newline.
 
 Below are the links for BinaryEdge's documentation identifying the addresses used for their scanner:
