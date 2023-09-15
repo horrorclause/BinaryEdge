@@ -1,6 +1,7 @@
 # Pulls BinaryEdge's scanners' IPv4 addresses located here: https://api.binaryedge.io/v1/minions
 # BinaryEdge  scans the internet and acquire data that can be used in threat intelligence feeds or security reports.
 # Documentation https://docs.binaryedge.io/
+# Make it easy to block all BinaryEdge scanners' IPv4 addresses by throwing them in a plain-text file, with each address on a separate line.
 
 import requests
 
@@ -18,11 +19,9 @@ ipCount = 0
 
 for ip in ipList:
     ipCount+=1
-    #print(ip)
     file.write(f"{ip}\n")
 
 file.close()
 
 print(f"Total IPv4 count: {ipCount}")
-
-#print(request.json()["scanners"])
+print("File creation complete.")
